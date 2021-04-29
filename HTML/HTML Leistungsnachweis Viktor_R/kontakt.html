@@ -53,7 +53,7 @@
 
     <div class="container">
         <h1 class="display-4">Kontaktformular</h1>
-        <form action="" method="post">
+        <form id="kontakt" name="kontakt" action="" method="post">
             <input name="security" type="hidden" value="secure">
             <div class="row">
                 <div class="form-group col-md-4">
@@ -90,7 +90,28 @@
             <button type="submit" name="sendform" class="btn btn-dark">Absenden</button>
         </form>
     </div><br/><br/><br/>
+    
     <!-- Kontakt Ende -->
+
+    <!-- Kontakt Formular auslesen Anfang -->
+
+    <script> 
+        kontakt.addEventListener('submit', (event) =>
+         {
+            let gender = document.querySelector("#SelectGender").value;
+         
+            let name = document.querySelector("#InputName").value;
+         
+            let mail = document.querySelector("#InputEmail").value;
+         
+            const msg = document.querySelector("#TextareaMessage").value;
+            
+            alert("Geschlecht : " + gender + "Name : "+ name + "\nMail :"+ mail + "\nAnliegen : " + msg);
+         
+        });
+        </script> 
+
+    <!-- Kontakt Formular auslesen Ende -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
