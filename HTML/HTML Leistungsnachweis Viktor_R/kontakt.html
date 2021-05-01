@@ -89,27 +89,26 @@
             </div>
             <button type="submit" name="sendform" class="btn btn-dark">Absenden</button>
         </form>
-    </div><br/><br/><br/>
-    
+    </div><br /><br /><br />
+
     <!-- Kontakt Ende -->
 
     <!-- Kontakt Formular auslesen Anfang -->
 
-    <script> 
-        kontakt.addEventListener('submit', (event) =>
-         {
+    <script>
+        kontakt.addEventListener('submit', (event) => {
             let gender = document.querySelector("#SelectGender").value;
-         
+
             let name = document.querySelector("#InputName").value;
-         
+
             let mail = document.querySelector("#InputEmail").value;
-         
+
             const msg = document.querySelector("#TextareaMessage").value;
-            
-            alert("Geschlecht : " + gender + "Name : "+ name + "\nMail :"+ mail + "\nAnliegen : " + msg);
-         
+
+            alert("Geschlecht : " + gender + "Name : " + name + "\nMail :" + mail + "\nAnliegen : " + msg);
+
         });
-        </script> 
+    </script>
 
     <!-- Kontakt Formular auslesen Ende -->
 
@@ -148,33 +147,18 @@
                 <div class="col-sm-3">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="startseite.html">Startseite</a></li>
+                        <li><a href="straende.html">Strände</a></li>
+                        <li><a href="sehenswertes.html">Sehenswürdigkeiten</a></li>
+                        <li><a href="unterhaltung&freizeit.html">Aktivitäten</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>About us</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
                     </ul>
                 </div>
             </div>
